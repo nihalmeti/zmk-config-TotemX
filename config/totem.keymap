@@ -41,7 +41,7 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <7 6>;
+            key-positions = <6 7>;
         };
 
         Enter {

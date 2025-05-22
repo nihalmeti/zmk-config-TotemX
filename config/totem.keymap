@@ -48,6 +48,12 @@
             bindings = <&kp ENTER>;
             key-positions = <16 17>;
         };
+
+        Game {
+            bindings = <&to 4>;
+            key-positions = <32 33 34>;
+            layers = <4>;
+        };
     };
 
     macros {
@@ -101,7 +107,7 @@
         nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "Navigation";
+            label = "Nav";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -127,7 +133,7 @@
         sym_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "Symbol";
+            label = "Sym";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -143,7 +149,7 @@
             bindings = <
            &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
            &trans    &trans  &trans    &trans    &trans       &kp C_MUTE    &trans        &trans        &trans      &trans
-&kp TILDE  &trans    &trans  &trans    &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &trans
+&kp TILDE  &trans    &trans  &trans    &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &kp UNDER
                              &trans    &gif      &mo 3        &trans        &kp C_PP      &trans
             >;
         };
@@ -153,7 +159,7 @@
         adjust_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "Function";
+            label = "Func";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -172,6 +178,17 @@
 &trans  &studio_unlock  &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                     &trans        &trans  &trans    &trans  &trans  &trans
             >;
+        };
+
+        game_layer {
+            bindings = <
+       &kp CLCK        &kp Q  &kp W  &kp E            &kp R        &trans  &trans  &trans  &trans  &trans
+       &kp LEFT_SHIFT  &kp A  &kp S  &kp D            &kp F        &trans  &trans  &trans  &trans  &trans
+&kp Y  &kp LCTRL       &kp Z  &kp X  &kp C            &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp U  &kp KP_NUMBER_4  &kp SPACE    &trans  &trans  &trans
+            >;
+
+            label = "Game";
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
